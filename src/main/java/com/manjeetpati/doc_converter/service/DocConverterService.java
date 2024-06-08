@@ -1,7 +1,9 @@
 package com.manjeetpati.doc_converter.service;
 
+import java.io.File;
+
 import org.springframework.web.multipart.MultipartFile;
 
 public interface DocConverterService {
-    public Object convert(MultipartFile file) throws Exception;
+    public byte[] convert(MultipartFile file) throws Exception;
 }
